@@ -1,0 +1,11 @@
+.profileContent{
+    grid-area: main-content;
+    margin: 10px;
+    font-family: Noto Sans JP;
+}
+
+.commentArea{
+    padding-top: 10px;
+}
+
+

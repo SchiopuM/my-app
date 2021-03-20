@@ -1,0 +1,8 @@
+.commentItem{
+    margin-top:15px ;
+}
+
+.commentItem img{
+    height: 50px;
+    border-radius: 50%;
+}

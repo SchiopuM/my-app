@@ -1,0 +1,16 @@
+.formBody{
+    margin: 10px;
+}
+.bodyArea {
+    border: solid 2px black;
+}
+
+
+.errorArea  {
+    border: 2px solid red;
+}
+
+.error{
+    margin-left: 5px;
+    color: red;
+}

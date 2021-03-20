@@ -1,0 +1,36 @@
+.header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-areas: 'logo logIn';
+    grid-template-columns: 200px 200px;
+    grid-gap: 1000px;
+
+}
+.logo {
+    margin-top: 15px;
+    grid-area: logo;
+    margin-left: 110px;
+    font-family: Lustria;
+    font-size: 20px;
+    max-width: 100px;
+    text-align: left;
+
+}
+
+.auth  {
+    margin-top: 15px;
+    grid-area: logIn;
+    float: right;
+    font-size: 20px;
+    max-width: 60px;
+}
+
+.auth a {
+    text-decoration: none;
+    color: white;
+    font-family: Lustria;
+
+
+}

@@ -1,0 +1,18 @@
+.body{
+    margin: 10px;
+    font-family: Noto Sans JP;
+}
+.avatar img{
+    width: 150px;
+
+}
+.userBody{
+    display: grid;
+    grid-template-columns: 135px 1fr ;
+    grid-gap: 2vw;
+    padding-bottom: 10px;
+}
+.activePage{
+    font-size: larger;
+    font-weight: bolder;
+}

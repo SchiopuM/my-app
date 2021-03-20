@@ -1,0 +1,29 @@
+.messages {
+    display: grid;
+    grid-template-areas: "users messages";
+    grid-template-columns: 2fr 10fr;
+
+}
+
+.messageUsers {
+    grid-area: users;
+    padding: 10px;
+}
+
+.messageUser {
+
+}
+
+.message {
+    grid-area: messages;
+    padding: 10px;
+
+}
+
+.messageItem {
+
+}
+
+textarea {
+    margin: 10px 0px;
+}

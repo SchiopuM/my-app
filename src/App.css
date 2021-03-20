@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lustria&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+.App {
+    margin: 0;
+    padding: 0;
+}
+.App {
+    display: grid;
+    grid-template-areas:
+            'header header'
+            'nav main-content'
+;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns:25% 1fr ;
+    height: 100vh;
+    margin: 0;
+}
+
+

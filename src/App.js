@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import {Route, withRouter} from "react-router-dom";
+import {Route} from "react-router-dom";
 import MessagesContainer from "./Components/Messages/MessagesContainer";
 import ProfileContainer from "./Components/Profile/ProfileContainer";
 import UsersContainer from "./Components/Users/UsersContainer";
@@ -10,16 +10,16 @@ import HeaderContainer from "./Components/Header/HeaderContainer";
 import Login from "./Components/Login/Login";
 import { connect } from "react-redux";
 import {initialiseApp} from './Redux/app-reducer'
-import { compose } from "redux";
 import Preloader from "./Images/Preloader/Preloader";
 
-class App extends React.Component {
-    componentDidMount() {
-        this.props.initialiseApp()
-    }
-    render() {
+const App = (props) => {
+    
+    useEffect( () => {
+    props.initialiseApp()
+}, [initialiseApp])
 
-        if (!this.props.toggle) {
+
+        if (!props.toggle) {
             return <Preloader />
         }
 
@@ -36,7 +36,6 @@ class App extends React.Component {
         );
     }
     
-};
 
 const stateData = (state) => (
     {
@@ -44,4 +43,4 @@ const stateData = (state) => (
     }
 )
 
-export default compose (withRouter, connect (stateData, {initialiseApp}))(App);
+export default  connect (stateData, {initialiseApp})(App);
